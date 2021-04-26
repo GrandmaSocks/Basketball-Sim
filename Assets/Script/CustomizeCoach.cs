@@ -14,11 +14,13 @@ public class CustomizeCoach : MonoBehaviour
     public static int CoachSelection = 0;
     public static int SchoolSelection = 0;
 
-    public static Image CoachPFP;
+    public Image CoachPFP;
 
-    public Image PreviewImage;
     public Sprite Coach0;
     public Sprite Coach1;
+
+    public Sprite Coach2;
+    public Sprite Coach3;
 
     void Start()
     {
@@ -32,8 +34,6 @@ public class CustomizeCoach : MonoBehaviour
             SchoolNameInput.text = "Baller High";
         }
 
-        PreviewImage = gameObject.GetComponent<Image>();
-
     }
 
     public void CoachLeft()
@@ -42,15 +42,56 @@ public class CustomizeCoach : MonoBehaviour
         {
             CoachSelection--;
             Debug.Log("Coach Selection: " + CoachSelection);
-            ChangeCoachPreview();
+
+            if (CoachSelection == 0)
+            {
+                CoachPFP.sprite = Coach0;
+            }
+
+            if (CoachSelection == 1)
+            {
+                CoachPFP.sprite = Coach1;
+            }
+
+            if (CoachSelection == 2)
+            {
+                CoachPFP.sprite = Coach2;
+            }
+
+            if (CoachSelection == 3)
+            {
+                CoachPFP.sprite = Coach3;
+            }
         }
     }
 
     public void CoachRight()
     {   
-        CoachSelection++;
-        Debug.Log("Coach Selection: " + CoachSelection);
-        ChangeCoachPreview();
+        if (CoachSelection <= 3)
+        {
+            CoachSelection++;
+            Debug.Log("Coach Selection: " + CoachSelection);
+            
+            if (CoachSelection == 0)
+            {
+                CoachPFP.sprite = Coach0;
+            }
+
+            if (CoachSelection == 1)
+            {
+                CoachPFP.sprite = Coach1;
+            }
+
+            if (CoachSelection == 2)
+            {
+                CoachPFP.sprite = Coach2;
+            }
+
+            if (CoachSelection == 3)
+            {
+                CoachPFP.sprite = Coach3;
+            }
+        }
     }
 
     public void SchoolLeft()
@@ -77,12 +118,22 @@ public class CustomizeCoach : MonoBehaviour
     {
         if (CoachSelection == 0)
         {
-            PreviewImage.sprite = Coach0;
+            CoachPFP.sprite = Coach0;
         }
 
         if (CoachSelection == 1)
         {
-            PreviewImage.sprite = Coach1;
+            CoachPFP.sprite = Coach1;
+        }
+
+        if (CoachSelection == 2)
+        {
+            CoachPFP.sprite = Coach2;
+        }
+
+        if (CoachSelection == 3)
+        {
+            CoachPFP.sprite = Coach3;
         }
     }
 }

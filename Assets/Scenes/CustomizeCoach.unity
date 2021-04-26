@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 29906557}
   - component: {fileID: 29906556}
   - component: {fileID: 29906555}
+  - component: {fileID: 29906558}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1360909937}
+      - m_Target: {fileID: 29906558}
         m_MethodName: CoachLeft
         m_Mode: 1
         m_Arguments:
@@ -250,6 +251,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29906553}
   m_CullTransparentMesh: 0
+--- !u!114 &29906558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29906553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ec43c7bbb4b5644be1b2d5b33f0621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoachNameInput: {fileID: 1711566351}
+  SchoolNameInput: {fileID: 1807349355}
+  CoachPFP: {fileID: 511182054}
+  Coach0: {fileID: 21300000, guid: 8f73015adb7746f43bf8aad30cc29f6c, type: 3}
+  Coach1: {fileID: 21300000, guid: 85c8facb7a4ee96478457e1d9fdf5db5, type: 3}
+  Coach2: {fileID: 21300000, guid: b5e627dabf94e90449240a1933840375, type: 3}
+  Coach3: {fileID: 21300000, guid: 51bab1595a54a1b41b422bb99837a7e0, type: 3}
 --- !u!1 &91094881
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030513, y: -463}
+  m_AnchoredPosition: {x: 0.00094604, y: -447}
   m_SizeDelta: {x: 480.72644, y: 90.13621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352133133
@@ -593,6 +613,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SaveColors
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &352133135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,9 +675,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoachNameInput: {fileID: 1711566351}
   SchoolNameInput: {fileID: 1807349355}
-  PreviewImage: {fileID: 0}
+  CoachPFP: {fileID: 0}
   Coach0: {fileID: 0}
   Coach1: {fileID: 0}
+  Coach2: {fileID: 0}
+  Coach3: {fileID: 0}
 --- !u!1 &511182052
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,9 +770,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoachNameInput: {fileID: 0}
   SchoolNameInput: {fileID: 0}
-  PreviewImage: {fileID: 511182054}
-  Coach0: {fileID: 21300000, guid: c29abca25159b874ca76ac690ef1a8ab, type: 3}
-  Coach1: {fileID: 21300000, guid: 96f90013378bad94a9858570f560fb5f, type: 3}
+  CoachPFP: {fileID: 511182054}
+  Coach0: {fileID: 21300000, guid: 8f73015adb7746f43bf8aad30cc29f6c, type: 3}
+  Coach1: {fileID: 21300000, guid: 85c8facb7a4ee96478457e1d9fdf5db5, type: 3}
+  Coach2: {fileID: 21300000, guid: b5e627dabf94e90449240a1933840375, type: 3}
+  Coach3: {fileID: 21300000, guid: 51bab1595a54a1b41b422bb99837a7e0, type: 3}
 --- !u!1 &623537199
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,8 +810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: -1536.9729, y: -868.1127}
+  m_AnchoredPosition: {x: 0, y: -295}
+  m_SizeDelta: {x: -1580.1968, y: -910.24133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623537201
 MonoBehaviour:
@@ -1019,9 +1054,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoachNameInput: {fileID: 0}
   SchoolNameInput: {fileID: 0}
-  PreviewImage: {fileID: 0}
+  CoachPFP: {fileID: 0}
   Coach0: {fileID: 0}
   Coach1: {fileID: 0}
+  Coach2: {fileID: 0}
+  Coach3: {fileID: 0}
 --- !u!61 &1114071280
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1297,9 +1334,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoachNameInput: {fileID: 0}
   SchoolNameInput: {fileID: 0}
-  PreviewImage: {fileID: 0}
+  CoachPFP: {fileID: 0}
   Coach0: {fileID: 0}
   Coach1: {fileID: 0}
+  Coach2: {fileID: 0}
+  Coach3: {fileID: 0}
 --- !u!61 &1337231353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1335,7 +1374,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360909938}
-  - component: {fileID: 1360909937}
   m_Layer: 0
   m_Name: Hold Values Object
   m_TagString: Untagged
@@ -1343,23 +1381,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1360909937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360909936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ec43c7bbb4b5644be1b2d5b33f0621, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoachNameInput: {fileID: 0}
-  SchoolNameInput: {fileID: 0}
-  PreviewImage: {fileID: 0}
-  Coach0: {fileID: 0}
-  Coach1: {fileID: 0}
 --- !u!4 &1360909938
 Transform:
   m_ObjectHideFlags: 0
@@ -1464,6 +1485,7 @@ GameObject:
   - component: {fileID: 1452930438}
   - component: {fileID: 1452930437}
   - component: {fileID: 1452930436}
+  - component: {fileID: 1452930439}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1533,7 +1555,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1360909937}
+      - m_Target: {fileID: 1452930439}
         m_MethodName: CoachRight
         m_Mode: 1
         m_Arguments:
@@ -1581,6 +1603,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452930434}
   m_CullTransparentMesh: 0
+--- !u!114 &1452930439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452930434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ec43c7bbb4b5644be1b2d5b33f0621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoachNameInput: {fileID: 1711566351}
+  SchoolNameInput: {fileID: 1807349355}
+  CoachPFP: {fileID: 511182054}
+  Coach0: {fileID: 21300000, guid: 8f73015adb7746f43bf8aad30cc29f6c, type: 3}
+  Coach1: {fileID: 21300000, guid: 85c8facb7a4ee96478457e1d9fdf5db5, type: 3}
+  Coach2: {fileID: 21300000, guid: b5e627dabf94e90449240a1933840375, type: 3}
+  Coach3: {fileID: 21300000, guid: 51bab1595a54a1b41b422bb99837a7e0, type: 3}
 --- !u!1 &1602786622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,14 +1747,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1675995329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ec43c7bbb4b5644be1b2d5b33f0621, type: 3}
+  m_Script: {fileID: 11500000, guid: 23742b463324571438419e4224964969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoachNameInput: {fileID: 0}
-  SchoolNameInput: {fileID: 0}
-  PreviewImage: {fileID: 1675995332}
-  Coach0: {fileID: 21300000, guid: c29abca25159b874ca76ac690ef1a8ab, type: 3}
-  Coach1: {fileID: 21300000, guid: 96f90013378bad94a9858570f560fb5f, type: 3}
+  CoachClothes: {fileID: 1675995332}
+  colorPicker: {fileID: 623537201}
 --- !u!114 &1675995332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1906,9 +1944,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoachNameInput: {fileID: 1711566351}
   SchoolNameInput: {fileID: 1807349355}
-  PreviewImage: {fileID: 0}
+  CoachPFP: {fileID: 0}
   Coach0: {fileID: 0}
   Coach1: {fileID: 0}
+  Coach2: {fileID: 0}
+  Coach3: {fileID: 0}
 --- !u!1 &1715397689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,9 +2187,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoachNameInput: {fileID: 1711566351}
   SchoolNameInput: {fileID: 1807349355}
-  PreviewImage: {fileID: 0}
+  CoachPFP: {fileID: 0}
   Coach0: {fileID: 0}
   Coach1: {fileID: 0}
+  Coach2: {fileID: 0}
+  Coach3: {fileID: 0}
 --- !u!1 &2146119599
 GameObject:
   m_ObjectHideFlags: 0
